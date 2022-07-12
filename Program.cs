@@ -11,15 +11,15 @@ namespace Questão_1_Djalma
         static void Main(string[] args)
         {
             string nome;
-            int notaF, notaT, notaP1, notaP2;
+            double notaF, notaT, notaP1, notaP2;
             Console.Write("Digite o seu nome:");
             nome = Console.ReadLine();
             Console.Write("Digite a nota do seu trabalho:");
-            notaT = Convert.ToInt32(Console.ReadLine());
+            notaT = Convert.ToDouble(Console.ReadLine());
             Console.Write("Digite a nota da sua primeira prova:");
-            notaP1 = Convert.ToInt32(Console.ReadLine());
+            notaP1 = Convert.ToDouble(Console.ReadLine());
             Console.Write("Digite a nota da sua segunda prova:");
-            notaP2 = Convert.ToInt32(Console.ReadLine());
+            notaP2 = Convert.ToDouble(Console.ReadLine());
             notaF = (notaT + notaP1 + notaP2) / 3;
 
             if (notaF >= 8.5)
@@ -44,14 +44,6 @@ namespace Questão_1_Djalma
             }
 
             Console.ReadKey();
-
-
-
-
-
-
-
-
         }
     }
 }
